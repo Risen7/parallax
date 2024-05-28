@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+::selection {
+    background-color: rgb(1, 99, 179);
+}
+
+.logo {
+    width: 70px;
+    padding-block: .2rem;
+}
+
+header{
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    padding: 0.9rem 0;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+header nav{
+    max-width:  1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+header ul a{
+    text-decoration: none;
+    color: #fff;
+    padding: 0 1.5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 0.83rem;
+}
+
+.search a {
+    font-size:  1.05rem;
+    padding:  0 3rem;
+}
+
+.hamburger {
+    padding-left: 1.5rem;
+}
+
+.hamburger a{
+    padding: 0;
+    width: 37px;
+    height: 37px;
+    display: flex;
+    border-radius: 50%;
+    background-color: rgba(115, 115, 115, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger .bar {
+    position: relative;
+    width: 52%;
+    height: 1.3px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+.hamburger .bar::before,
+.hamburger .bar::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 100%;
+    background-color: inherit;
+    border-radius: 2px;
+}
+
+.hamburger .bar::before {
+    top: -4.5px;
+}
+
+.hamburger .bar::after {
+    top: 4.5px;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.parallax{
+    pointer-events: none;
+    transition: 0.45s cubic-bezier(.2,.49,.32,.99);
+}
+
+.bg-img {
+    position: absolute;
+    z-index: 1;
+    /* width: 2330; */
+    top: calc(50% - 0px);
+    left: 50%;
+}
+
+.wave {
+    position: absolute;
+    z-index: 2;
+    /* width: 2330; */
+    top: calc(50% - 0px);
+    left: 50%;
+}
+
+.rock {
+    position: absolute;
+    z-index: 3;
+    /* width: 2330; */
+    top: calc(50% - 50px);
+    left: 50%;
+}
+
+.sun {
+    position: absolute;
+    z-index: 4;
+    width: 1000;
+    top: calc(50% - 230px);
+    left: 50%;
+}
+
+.gatot {
+    position: absolute;
+    z-index: 7;
+    width: 1450px;
+    top: calc(50% + 25px);
+    left: 50%;
+    
+}
+
+.text {
+    position: absolute;
+    z-index: 5;
+    bottom: 10%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-transform: uppercase;
+    pointer-events: auto;
+    color: #fff;
+}
+
+.text h2 {
+    text-align: left;
+    font-weight: 100;
+    font-size: 6.5rem;
+    line-height: 6rem;
+}
+
+.text h1 {
+    font-weight: 800;
+    font-size: 8rem;
+    line-height: 6rem;
+}
+
+.splash {
+    position: absolute;
+    z-index: 6;
+    width: 1760px;
+    top: calc(50% + 20px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.flair-1 {
+    position: absolute;
+    z-index: 8;
+    width: 1400px;
+    top: calc(50% - 100px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: screen;
+}
+
+.flair-2 {
+    position: absolute;
+    z-index: 9;
+    width: 550px;
+    top: calc(50% - 328px);
+    left: 72%;
+    transform: translate(-50%, -50%);
+}
+
+.bright-spot {
+    position: absolute;
+    z-index: 10;
+    width: 1300px;
+    top: calc(50% - 0px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.droplets {
+    position: absolute;
+    z-index: 20;
+    width: 1365px;
+    top: calc(50% - 70px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: overlay;
+}
+
+.droplets-hl {
+    position: absolute;
+    z-index: 21;
+    width: 1360px;
+    top: calc(50% - 70px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: overlay;
+}
+
+
